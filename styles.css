@@ -515,6 +515,9 @@
   line-height: 52px;
   width: 624px;
 }
+.learnly-improve-skills h1 span {
+  color: #FF6D33;
+}
 .learnly-improve-skills--buttons {
   display: flex;
   gap: 16px;

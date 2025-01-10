@@ -577,7 +577,11 @@
         font-weight: 700;
         line-height: 52px;
         width: 624px;
-    }
+      
+        span {
+          color: #FF6D33;
+        }
+      }      
 
     &--buttons {
         display: flex;
@@ -631,6 +635,15 @@
     }
 }
 
+
+
+
+
+
+
+
+
+// footer code will be last
 .learnly-footer {
     width: 100%;
     background: #0C4634;
