@@ -5,6 +5,7 @@
 
 :root {
     font-family: "Plus Jakarta Sans", serif;
+    --learnly-green-color: #1A9C73;
 }
 
 .learnly-container {
@@ -23,7 +24,8 @@
 }
 
 .learnly-button-transparent {
-    color: #1A9C73;
+    cursor: pointer;
+    color: var(--learnly-green-color);
     font-size: 1rem;
     font-weight: 600;
     line-height: 30px;
@@ -32,7 +34,20 @@
 }
 
 .learnly-button-background-green {
-    background: #1A9C73;
+    cursor: pointer;
+    background: var(--learnly-green-color);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 30px;
+    border-radius: 8px;
+    border: none;
+    padding: 12px 24px;
+    color: #ffffff;
+}
+
+.learnly-button-background-vivid-orange {
+    cursor: pointer;
+    background: #FF6D33;
     font-size: 1rem;
     font-weight: 600;
     line-height: 30px;
@@ -330,7 +345,7 @@
     height: 48px;
     flex-shrink: 0;
     background: #ffffff;
-    border: 1px solid #1A9C73;
+    border: 1px solid var(--learnly-green-color);
     border-radius: 100px;
 }
 
@@ -341,7 +356,7 @@
     width: 48px;
     height: 48px;
     flex-shrink: 0;
-    background: #1A9C73;
+    background: var(--learnly-green-color);
     border: 2px solid #ffffff;
     border-radius: 100px;
 }
@@ -527,18 +542,200 @@
             font-weight: 500;
         }
 
-        &__slider{
+        &__slider {
             display: flex;
             align-items: center;
             justify-content: space-between;
             gap: 180px;
 
-            &__profile, &__buttons{
+            &__profile,
+            &__buttons {
                 white-space: nowrap;
                 display: flex;
                 align-items: center;
                 gap: 16px;
             }
+        }
+    }
+}
+
+.learnly-improve-skills {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    background: #FFF4F0;
+    flex-shrink: 0;
+    padding: 72px;
+
+    h1 {
+        color: #2C2C2C;
+        margin: 0;
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 52px;
+        width: 624px;
+    }
+
+    &--buttons {
+        display: flex;
+        gap: 16px;
+    }
+}
+
+.learnly-accordian {
+    width: 100%;
+    padding: 160px 0;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+
+    h1 {
+        color: #2C2C2C;
+        text-align: center;
+        margin: 0;
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 62px
+    }
+
+    &--qst {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+
+        &__card {
+            width: 100%;
+            display: flex;
+            padding: 24px;
+            justify-content: space-between;
+            align-items: flex-start;
+            align-self: stretch;
+            border-radius: 4px;
+            border: 1px solid rgba(44, 44, 44, 0.20);
+            box-shadow: 0px 0.5px 2px 0px rgba(16, 24, 40, 0.15);
+            cursor: pointer;
+
+            h5 {
+                font-size: 18px;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.learnly-footer {
+    width: 100%;
+    background: #0C4634;
+    padding: 30px 0;
+
+    .learnly-container {
+        .learnly-footer-subscribe {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 40px 0;
+            align-self: stretch;
+
+            h1 {
+                color: #FFF;
+                margin: 0;
+                width: 540px;
+                font-size: 2.5rem;
+                font-weight: 700;
+                line-height: 52px;
+            }
+
+            &--actions {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                input {
+                    width: 356px;
+                    padding: 18px;
+                    border-radius: 8px;
+                    border: 2px solid #ffffff;
+                    background: transparent;
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                    &::placeholder {
+                        color: #ffffff;
+                        margin: 0;
+                        font-size: 1rem;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+
+        .learnly-divider-footer {
+            border-bottom: 1px solid #ffffff;
+            width: 100%;
+            margin: 24px 0;
+        }
+
+        .learnly-footer-content {
+            width: 100%;
+            padding-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: auto;
+
+            &--left {
+                width: 20%;
+                display: flex;
+                flex-direction: column;
+                color: white;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 16px;
+
+                &__socials {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                }
+            }
+
+            &--right {
+                display: flex;
+                width: 377px;
+                align-items: flex-start;
+                justify-content: space-between;
+
+                &__website,
+                &__company {
+                    h3 {
+                        color: #ffffff;
+                        margin-bottom: 24px;
+                        font-size: 20px;
+                    }
+
+                    p {
+                        font-family: 16px;
+                        margin-bottom: 16px;
+                        color: #ffffff;
+                    }
+                }
+
+            }
+        }
+
+        .learnly-footer-copyright {
+            font-size: 12px;
+            color: #ffffff;
         }
     }
 }
