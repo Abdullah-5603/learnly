@@ -152,8 +152,50 @@
   background: #FFF;
   box-shadow: 0px 8px 24px 0px rgba(220, 220, 220, 0.24);
 }
-.courses .course-card h3, .courses .course-card p {
+.courses .course-card h3,
+.courses .course-card p {
   margin: 0;
+}
+
+.educational-advantage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 100px;
+  padding: 160px 0;
+  width: 100%;
+}
+.educational-advantage--left {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 60px;
+}
+.educational-advantage--left h1 {
+  color: #2C2C2C;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 62px;
+  margin: 0;
+}
+.educational-advantage--left__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+.educational-advantage--left__cards__card h3 {
+  margin: 16px 0 8px 0;
+  color: #07271D;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 30px;
+}
+.educational-advantage--left__cards__card p {
+  color: #595959;
+  font-size: 0.87rem;
+  font-weight: 400;
+  line-height: 22px;
 }
 
 /*# sourceMappingURL=styles.css.map */
