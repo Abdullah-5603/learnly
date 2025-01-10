@@ -1,12 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
     <title>Learnly</title>
 </head>
+
 <body>
-    
+
+    <section class="header">
+        <!-- container -->
+        <div class="container">
+
+            <!-- Navbar -->
+            <nav class="learnly-navbar">
+                <div class="learnly-navbar--logo">
+                    <img src="./images/Logo.svg" alt="">
+                </div>
+                <div class="learnly-navbar--routes">
+                    <a href="#" class="active" target="_blank">Home</a>
+                    <a href="./course.html">Course</a>
+                    <a href="./about.html">About</a>
+                    <a href="./contact.html">Contact</a>
+                </div>
+                <div class="learnly-flex-buttons">
+                    <button class="learnly-button-transparent">Login</button>
+                    <button class="learnly-button-background-green">Sign Up</button>
+                </div>
+            </nav>
+            <header class="learnly-header">
+                <div class="learnly-header--left">
+                    <div class="learnly-header--left__text">
+                        <h1>Find the Best Online Courses for Grow Your Skill</h1>
+                        <p>Create and sell online courses, build vibrant
+                            communities, and monetize memberships — all on a single, scalable platform.</p>
+                    </div>
+                    <div class="learnly-flex-buttons">
+                        <button class="learnly-button-background-green">Explore Course</button>
+                        <button class="learnly-button-transparent">Learn More</button>
+                    </div>
+                    <div class="learnly-header--left__stats">
+                        <h1>90+ <span>Total Course</span></h1>
+                        <div class="devider"></div>
+                        <h1>650+ <span>Hours of Tutorial</span></h1>
+                        <div class="devider"></div>
+                        <h1>99% <span>Satisfaction Rate</span></h1>
+                    </div>
+                </div>
+                <div class="learnly-header--right">
+                    <img src="./images/banner-image.svg" alt="banner-image">
+                </div>
+            </header>
+        </div>
+    </section>
+
+    <section class="container courses">
+        <div class="course-card">
+            <img src="./images/code.png" alt="">
+            <h3>Programming & Tech</h3>
+            <p>25 Courses</p>
+        </div>
+        <div class="course-card">
+            <img src="./images/code.png" alt="">
+            <h3>Programming & Tech</h3>
+            <p>25 Courses</p>
+        </div>
+        <div class="course-card">
+            <img src="./images/code.png" alt="">
+            <h3>Programming & Tech</h3>
+            <p>25 Courses</p>
+        </div>
+        <div class="course-card">
+            <img src="./images/code.png" alt="">
+            <h3>Programming & Tech</h3>
+            <p>25 Courses</p>
+        </div>
+        <div class="course-card">
+            <img src="./images/code.png" alt="">
+            <h3>Programming & Tech</h3>
+            <p>25 Courses</p>
+        </div>
+    </section>
+
+
+    <script>
+        const currentPath = window.location.pathname; // Get current path
+        const navLinks = document.querySelectorAll('.learnly-navbar--routes a');
+
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === currentPath) {
+                link.classList.add('active');
+            }
+        });
+
+    </script>
 </body>
+
 </html>

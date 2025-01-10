@@ -1,0 +1,159 @@
+:root {
+  font-family: "Plus Jakarta Sans", serif;
+}
+
+.container {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.header {
+  background: #F7FDFB;
+  width: 100%;
+  height: 56.56rem;
+}
+
+.learnly-button-transparent {
+  color: #1A9C73;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 30px;
+  border: none;
+  background: none;
+}
+
+.learnly-button-background-green {
+  background: #1A9C73;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 30px;
+  border-radius: 8px;
+  border: none;
+  padding: 12px 24px;
+  color: #ffffff;
+}
+
+.learnly-flex-buttons {
+  display: flex;
+  gap: 24px;
+}
+
+.learnly-navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+}
+.learnly-navbar--routes {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.learnly-navbar--routes a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000000;
+  opacity: 60%;
+}
+.learnly-navbar--routes a:hover {
+  color: #000000;
+  opacity: 100%;
+}
+.learnly-navbar--routes .active {
+  color: #000000;
+  opacity: 100%;
+}
+
+.devider {
+  width: 1px;
+  height: 79px;
+  background: rgba(44, 44, 44, 0.2);
+  margin: 0 60px;
+}
+
+.learnly-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 99px;
+}
+.learnly-header--left {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  gap: 24px;
+}
+.learnly-header--left .learnly-flex-buttons {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+.learnly-header--left__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.learnly-header--left__text h1 {
+  color: #2C2C2C;
+  font-size: 3.75rem;
+  font-weight: 700;
+  margin: 0;
+}
+.learnly-header--left__text p {
+  color: #595959;
+  font-size: 1.12rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  margin: 0;
+}
+.learnly-header--left__stats {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.learnly-header--left__stats h1 {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  color: #2C2C2C;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  margin: 0;
+}
+.learnly-header--left__stats h1 span {
+  color: #808080;
+  font-size: 0.87rem;
+  font-weight: 400;
+}
+
+.courses {
+  padding: 80px 0;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap: 2rem;
+}
+.courses .course-card {
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  flex: 1 0 0;
+  border-radius: 1rem;
+  border: 1px solid rgba(44, 44, 44, 0.1);
+  background: #FFF;
+  box-shadow: 0px 8px 24px 0px rgba(220, 220, 220, 0.24);
+}
+.courses .course-card h3, .courses .course-card p {
+  margin: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */
