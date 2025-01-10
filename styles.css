@@ -354,4 +354,131 @@
   right: -2%;
 }
 
+.learnly-testimonial {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 97px;
+  padding: 160px 0;
+}
+.learnly-testimonial--left {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 40px;
+}
+.learnly-testimonial--left__section-1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+}
+.learnly-testimonial--left__section-1__top {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background: #F7FDFB;
+  padding: 10px;
+  align-self: stretch;
+  justify-content: space-evenly;
+  height: 120px;
+}
+.learnly-testimonial--left__section-1__top__images {
+  position: relative;
+  display: flex;
+}
+.learnly-testimonial--left__section-1__top__images img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+}
+.learnly-testimonial--left__section-1__top__images img:nth-child(2) {
+  position: absolute;
+  left: 30px;
+  z-index: 1;
+}
+.learnly-testimonial--left__section-1__top__images img:nth-child(3) {
+  position: absolute;
+  left: 15px;
+  top: 20px;
+  z-index: 2;
+}
+.learnly-testimonial--left__section-1__top__texts h1 {
+  font-size: 2rem;
+  color: #222222;
+  margin: 0;
+}
+.learnly-testimonial--left__section-1__top__texts p {
+  font-size: 1rem;
+  color: #666666;
+  margin: 0;
+}
+.learnly-testimonial--left__section-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.learnly-testimonial--left__section-2__bottom {
+  background: #EBF3FF;
+  display: flex;
+  height: 120px;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+.learnly-testimonial--left__section-2__bottom h1 {
+  color: #2C2C2C;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.62rem;
+  margin: 0;
+}
+.learnly-testimonial--left__section-2__bottom p {
+  color: #666666;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+}
+.learnly-testimonial--right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.learnly-testimonial--right h1 {
+  color: #2C2C2C;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 50px;
+  margin: 0 0 110px 0;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(20, 26, 36, 0.2);
+  align-self: stretch;
+}
+.learnly-testimonial--right p {
+  align-self: stretch;
+  color: #2C2C2C;
+  margin: 0 0 40px 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.learnly-testimonial--right__slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 180px;
+}
+.learnly-testimonial--right__slider__profile, .learnly-testimonial--right__slider__buttons {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
 /*# sourceMappingURL=styles.css.map */
