@@ -1,8 +1,13 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
 :root {
     font-family: "Plus Jakarta Sans", serif;
 }
 
-.container {
+.learnly-container {
     max-width: 1200px;
     display: flex;
     flex-direction: column;
@@ -145,14 +150,14 @@
     }
 }
 
-.courses {
+.learnly-courses {
     padding: 80px 0;
     display: flex;
     width: 100%;
     flex-direction: row;
     gap: 2rem;
 
-    .course-card {
+    .learnly-course-card {
         display: flex;
         padding: 24px;
         flex-direction: column;
@@ -171,7 +176,7 @@
     }
 }
 
-.educational-advantage {
+.learnly-educational-advantage {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -218,3 +223,172 @@
         }
     }
 }
+
+.learnly-course-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 27px;
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 16px;
+        border-radius: 12px;
+        background: #ffffff;
+
+        &__image {
+            width: 380px;
+            height: 255px;
+            border-radius: 12px 12px 0 0;
+        }
+    }
+
+    &__elements {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        h4 {
+            color: #2C2C2C;
+            font-size: 1.25rem;
+            font-weight: 700;
+            line-height: 30px;
+            margin: 0;
+        }
+
+        &__ratings {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            gap: 8px;
+
+            p {
+                overflow: hidden;
+                color: #2C2C2C;
+                margin: 0;
+                font-size: 1rem;
+                font-weight: 500;
+                line-height: 24px;
+            }
+
+            &__star {
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+
+                .leanly-star {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+
+        &__user-name {
+            display: flex;
+            gap: 8px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #DEDEDE;
+        }
+
+        &__price-action {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &__price {
+                display: flex;
+                gap: 4px;
+
+                p:nth-child(1) {
+                    color: #2C2C2C;
+                    margin: 0;
+                    font-size: 1rem;
+                    font-weight: 700;
+                }
+
+                p:nth-child(2) {
+                    color: #949494;
+                    margin: 0;
+                    font-size: 1rem;
+                    font-weight: 700;
+                    text-decoration: line-through;
+                }
+            }
+        }
+    }
+}
+
+.learnly-slider-arrow-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    background: #ffffff;
+    border: 1px solid #1A9C73;
+    border-radius: 100px;
+}
+.learnly-slider-arrow-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    background: #1A9C73;
+    border: 2px solid #ffffff;
+    border-radius: 100px;
+}
+
+.learnly-popular-courses {
+    padding: 156px 0;
+    background: #0C4634;
+    width: 100%;
+
+    .learnly-container {
+        gap: 60px;
+
+        .learnly-popular-courses-heading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 16px;
+
+            h1 {
+                color: #FFF;
+                margin: 0;
+                font-size: 3rem;
+                font-weight: 700;
+                line-height: 62px;
+            }
+
+            p {
+                color: #FFF;
+                text-align: center;
+                margin: auto;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 24px;
+            }
+        }
+
+        .learnly-course-cards {
+            position: relative;
+            .learnly-slider-arrow-left {
+                position: absolute;
+                left: -2%;
+            }
+            .learnly-slider-arrow-right {
+                position: absolute;
+                right: -2%;
+            }
+        }
+    }
+}
+
