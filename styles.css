@@ -6,6 +6,7 @@
 :root {
   font-family: "Plus Jakarta Sans", serif;
   --learnly-green-color: #1A9C73;
+  --learnly-border-color: #DEDEDE;
 }
 
 .learnly-container {
@@ -17,10 +18,31 @@
   margin: auto;
 }
 
-.header {
+.learnly-header-parent-home {
   background: #F7FDFB;
   width: 100%;
   height: 56.56rem;
+}
+
+.learnly-header-parent {
+  background: #F7FDFB;
+  width: 100%;
+  height: 29.37rem;
+}
+
+.learnly-page-heading {
+  color: #2C2C2C;
+  font-size: 3.75rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.learnly-page-sub-heading {
+  color: #595959;
+  font-size: 1.12rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  margin: 0;
 }
 
 .learnly-button-transparent {
@@ -97,47 +119,34 @@
   margin: 0 60px;
 }
 
-.learnly-header {
+.learnly-header-home {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 99px;
 }
-.learnly-header--left {
+.learnly-header-home--left {
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
   gap: 24px;
 }
-.learnly-header--left .learnly-flex-buttons {
+.learnly-header-home--left .learnly-flex-buttons {
   margin-top: 40px;
   margin-bottom: 60px;
 }
-.learnly-header--left__text {
+.learnly-header-home--left__text {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-.learnly-header--left__text h1 {
-  color: #2C2C2C;
-  font-size: 3.75rem;
-  font-weight: 700;
-  margin: 0;
-}
-.learnly-header--left__text p {
-  color: #595959;
-  font-size: 1.12rem;
-  font-weight: 400;
-  line-height: 1.75rem;
-  margin: 0;
-}
-.learnly-header--left__stats {
+.learnly-header-home--left__stats {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.learnly-header--left__stats h1 {
+.learnly-header-home--left__stats h1 {
   display: flex;
   flex-direction: column;
   gap: 9px;
@@ -147,7 +156,7 @@
   line-height: 3.25rem;
   margin: 0;
 }
-.learnly-header--left__stats h1 span {
+.learnly-header-home--left__stats h1 span {
   color: #808080;
   font-size: 0.87rem;
   font-weight: 400;
@@ -218,13 +227,13 @@
   line-height: 22px;
 }
 
-.learnly-course-cards {
+.learnly-courses-cards {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 27px;
 }
-.learnly-course-cards__card {
+.learnly-courses-cards__card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -233,31 +242,31 @@
   border-radius: 12px;
   background: #ffffff;
 }
-.learnly-course-cards__card__image {
+.learnly-courses-cards__card__image {
   width: 380px;
   height: 255px;
   border-radius: 12px 12px 0 0;
 }
-.learnly-course-cards__elements {
+.learnly-courses-cards__elements {
   padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-.learnly-course-cards__elements h4 {
+.learnly-courses-cards__elements h4 {
   color: #2C2C2C;
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 30px;
   margin: 0;
 }
-.learnly-course-cards__elements__ratings {
+.learnly-courses-cards__elements__ratings {
   display: flex;
   align-items: center;
   flex-direction: row;
   gap: 8px;
 }
-.learnly-course-cards__elements__ratings p {
+.learnly-courses-cards__elements__ratings p {
   overflow: hidden;
   color: #2C2C2C;
   margin: 0;
@@ -265,37 +274,37 @@
   font-weight: 500;
   line-height: 24px;
 }
-.learnly-course-cards__elements__ratings__star {
+.learnly-courses-cards__elements__ratings__star {
   display: flex;
   align-items: center;
   flex-direction: row;
 }
-.learnly-course-cards__elements__ratings__star .leanly-star {
+.learnly-courses-cards__elements__ratings__star .leanly-star {
   width: 20px;
   height: 20px;
 }
-.learnly-course-cards__elements__user-name {
+.learnly-courses-cards__elements__user-name {
   display: flex;
   gap: 8px;
   padding-bottom: 16px;
   border-bottom: 1px solid #DEDEDE;
 }
-.learnly-course-cards__elements__price-action {
+.learnly-courses-cards__elements__price-action {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.learnly-course-cards__elements__price-action__price {
+.learnly-courses-cards__elements__price-action__price {
   display: flex;
   gap: 4px;
 }
-.learnly-course-cards__elements__price-action__price p:nth-child(1) {
+.learnly-courses-cards__elements__price-action__price p:nth-child(1) {
   color: #2C2C2C;
   margin: 0;
   font-size: 1rem;
   font-weight: 700;
 }
-.learnly-course-cards__elements__price-action__price p:nth-child(2) {
+.learnly-courses-cards__elements__price-action__price p:nth-child(2) {
   color: #949494;
   margin: 0;
   font-size: 1rem;
@@ -357,14 +366,14 @@
   font-weight: 400;
   line-height: 24px;
 }
-.learnly-popular-courses .learnly-container .learnly-course-cards {
+.learnly-popular-courses .learnly-container .learnly-courses-cards {
   position: relative;
 }
-.learnly-popular-courses .learnly-container .learnly-course-cards .learnly-slider-arrow-left {
+.learnly-popular-courses .learnly-container .learnly-courses-cards .learnly-slider-arrow-left {
   position: absolute;
   left: -2%;
 }
-.learnly-popular-courses .learnly-container .learnly-course-cards .learnly-slider-arrow-right {
+.learnly-popular-courses .learnly-container .learnly-courses-cards .learnly-slider-arrow-right {
   position: absolute;
   right: -2%;
 }
@@ -563,6 +572,26 @@
 .learnly-accordian--qst__card h5 {
   font-size: 18px;
   font-weight: 700;
+}
+
+.learnly-courses-page {
+  display: flex;
+  flex-direction: column;
+}
+.learnly-courses-page .learnly-header-parent .learnly-container .learnly-header {
+  height: 22rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.learnly-courses-page .learnly-courses-cards {
+  padding: 160px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.learnly-courses-page .learnly-courses-cards__card {
+  border: 1px solid var(--learnly-border-color);
 }
 
 .learnly-footer {
