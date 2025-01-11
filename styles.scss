@@ -61,6 +61,40 @@
     text-align: center;
 }
 
+.learnly-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+
+    input {
+        padding: 10px;
+        background: transparent;
+        width: 100%;
+        border-radius: 8px;
+        border: 1px solid var(--learnly-border-color);
+
+        &:focus {
+            outline: none;
+
+        }
+    }
+
+    textarea {
+        padding: 12px 14px;
+        height: 100px;
+        background: transparent;
+        width: 100%;
+        border-radius: 8px;
+        border: 1px solid var(--learnly-border-color);
+
+        &:focus {
+            outline: none;
+
+        }
+    }
+}
+
 .learnly-button-transparent {
     cursor: pointer;
     color: var(--learnly-green-color);
@@ -784,6 +818,7 @@
                     display: grid;
                     grid-template-columns: repeat(3, 1fr);
                     gap: 32px;
+
                     &__card {
                         display: flex;
                         padding: 24px;
@@ -808,7 +843,7 @@
         }
     }
 
-    .learnly-experts{
+    .learnly-experts {
         width: 100%;
         padding: 160px 0 0 0;
         display: flex;
@@ -816,7 +851,7 @@
         align-items: center;
         gap: 60px;
 
-        &--cards{
+        &--cards {
             width: 100%;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -824,6 +859,128 @@
         }
     }
 
+}
+
+.learnly-contact-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .learnly-header-parent {
+        height: 567px;
+
+        .learnly-container {
+            .learnly-header {
+                height: 22rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+.learnly-contact-page {
+    .learnly-contact-us {
+        position: absolute;
+        top: 60%;
+        left: 18.8%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background: #ffffff;
+        border-radius: 12px;
+        border: 1px solid var(--learnly-border-color);
+        margin-bottom: 160px;
+
+        &--form {
+            padding: 32px 48px;
+
+            .learnly-section-heading {
+                margin-bottom: 3rem;
+                text-align: start;
+            }
+
+            &__inputs {
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                gap: 24px;
+
+                &__username {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+            }
+        }
+
+        &--email-call {
+            padding: 32px;
+
+            &__content {
+                background: #1A9C73;
+                padding: 40px;
+                border-radius: 16px;
+                color: white;
+
+                .learnly-divider-contact {
+                    border-bottom: 1px solid #ffffff;
+                    width: 100%;
+                    margin: 68px 0;
+                }
+
+                .contact-item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 16px;
+
+                    .icon {
+                        width: 48px;
+                        height: 48px;
+
+                        img {
+                            max-width: 100%;
+                            height: auto;
+                        }
+                    }
+
+                    h2 {
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                        margin: 0;
+                    }
+
+                    p {
+                        font-size: 1rem;
+                        margin: 0;
+                        line-height: 1.5;
+                    }
+
+                    a {
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                        color: white;
+                        text-decoration: none;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .learnly-footer {
+        margin-top: 675px;
+    }
 }
 
 

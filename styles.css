@@ -61,6 +61,34 @@
   text-align: center;
 }
 
+.learnly-input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+.learnly-input input {
+  padding: 10px;
+  background: transparent;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--learnly-border-color);
+}
+.learnly-input input:focus {
+  outline: none;
+}
+.learnly-input textarea {
+  padding: 12px 14px;
+  height: 100px;
+  background: transparent;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--learnly-border-color);
+}
+.learnly-input textarea:focus {
+  outline: none;
+}
+
 .learnly-button-transparent {
   cursor: pointer;
   color: var(--learnly-green-color);
@@ -720,6 +748,106 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
+}
+
+.learnly-contact-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.learnly-contact-page .learnly-header-parent {
+  height: 567px;
+}
+.learnly-contact-page .learnly-header-parent .learnly-container .learnly-header {
+  height: 22rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.learnly-contact-page .learnly-contact-us {
+  position: absolute;
+  top: 60%;
+  left: 18.8%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid var(--learnly-border-color);
+  margin-bottom: 160px;
+}
+.learnly-contact-page .learnly-contact-us--form {
+  padding: 32px 48px;
+}
+.learnly-contact-page .learnly-contact-us--form .learnly-section-heading {
+  margin-bottom: 3rem;
+  text-align: start;
+}
+.learnly-contact-page .learnly-contact-us--form__inputs {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 24px;
+}
+.learnly-contact-page .learnly-contact-us--form__inputs__username {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.learnly-contact-page .learnly-contact-us--email-call {
+  padding: 32px;
+}
+.learnly-contact-page .learnly-contact-us--email-call__content {
+  background: #1A9C73;
+  padding: 40px;
+  border-radius: 16px;
+  color: white;
+}
+.learnly-contact-page .learnly-contact-us--email-call__content .learnly-divider-contact {
+  border-bottom: 1px solid #ffffff;
+  width: 100%;
+  margin: 68px 0;
+}
+.learnly-contact-page .learnly-contact-us--email-call__content .contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+.learnly-contact-page .learnly-contact-us--email-call__content .contact-item .icon {
+  width: 48px;
+  height: 48px;
+}
+.learnly-contact-page .learnly-contact-us--email-call__content .contact-item .icon img {
+  max-width: 100%;
+  height: auto;
+}
+.learnly-contact-page .learnly-contact-us--email-call__content .contact-item h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+.learnly-contact-page .learnly-contact-us--email-call__content .contact-item p {
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.5;
+}
+.learnly-contact-page .learnly-contact-us--email-call__content .contact-item a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+.learnly-contact-page .learnly-contact-us--email-call__content .contact-item a:hover {
+  text-decoration: underline;
+}
+.learnly-contact-page .learnly-footer {
+  margin-top: 675px;
 }
 
 .learnly-footer {
