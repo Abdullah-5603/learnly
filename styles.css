@@ -45,6 +45,22 @@
   margin: 0;
 }
 
+.learnly-section-heading {
+  color: #2C2C2C;
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.learnly-section-sub-heading {
+  color: #808080;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+}
+
 .learnly-button-transparent {
   cursor: pointer;
   color: var(--learnly-green-color);
@@ -201,13 +217,6 @@
   justify-content: start;
   gap: 60px;
 }
-.learnly-educational-advantage--left h1 {
-  color: #2C2C2C;
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 62px;
-  margin: 0;
-}
 .learnly-educational-advantage--left__cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -351,20 +360,12 @@
   flex-direction: column;
   gap: 16px;
 }
-.learnly-popular-courses .learnly-container .learnly-popular-courses-heading h1 {
-  color: #FFF;
-  margin: 0;
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 62px;
+.learnly-popular-courses .learnly-container .learnly-popular-courses-heading .learnly-section-heading {
+  color: #ffffff;
 }
-.learnly-popular-courses .learnly-container .learnly-popular-courses-heading p {
-  color: #FFF;
+.learnly-popular-courses .learnly-container .learnly-popular-courses-heading .learnly-section-sub-heading {
+  color: #ffffff;
   text-align: center;
-  margin: auto;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 24px;
 }
 .learnly-popular-courses .learnly-container .learnly-courses-cards {
   position: relative;
@@ -475,10 +476,7 @@
   flex-direction: column;
   align-items: center;
 }
-.learnly-testimonial--right h1 {
-  color: #2C2C2C;
-  font-size: 2.5rem;
-  font-weight: 700;
+.learnly-testimonial--right .learnly-section-heading {
   line-height: 50px;
   margin: 0 0 110px 0;
   padding-bottom: 24px;
@@ -542,14 +540,6 @@
   justify-content: center;
   gap: 60px;
 }
-.learnly-accordian h1 {
-  color: #2C2C2C;
-  text-align: center;
-  margin: 0;
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 62px;
-}
 .learnly-accordian--qst {
   display: flex;
   flex-direction: column;
@@ -592,6 +582,144 @@
 }
 .learnly-courses-page .learnly-courses-cards__card {
   border: 1px solid var(--learnly-border-color);
+}
+
+.learnly-about-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.learnly-about-page .learnly-header-parent .learnly-container .learnly-header {
+  height: 22rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.learnly-about-page .learnly-impact {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+.learnly-about-page .learnly-impact--images {
+  position: absolute;
+  top: -25%;
+  display: flex;
+  align-items: flex-end;
+  gap: 32px;
+}
+.learnly-about-page .learnly-impact--texts {
+  padding-top: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  gap: 60px;
+}
+.learnly-about-page .learnly-impact--texts h1 {
+  color: #2C2C2C;
+  text-align: center;
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.learnly-about-page .learnly-impact--texts__stats {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.learnly-about-page .learnly-impact--texts__stats h1 {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  color: #2C2C2C;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  margin: 0;
+}
+.learnly-about-page .learnly-impact--texts__stats h1 span {
+  color: #808080;
+  font-size: 0.87rem;
+  font-weight: 400;
+}
+.learnly-about-page .learnly-design-education {
+  padding: 160px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+.learnly-about-page .learnly-design-education--left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 60px;
+}
+.learnly-about-page .learnly-design-education--left__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.learnly-about-page .learnly-design-education--left__lists {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+.learnly-about-page .learnly-value-drive {
+  width: 100%;
+  padding: 160px 0;
+  background: #F7FDFB;
+}
+.learnly-about-page .learnly-value-drive .learnly-container .learnly-value-drive-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+  align-items: center;
+}
+.learnly-about-page .learnly-value-drive .learnly-container .learnly-value-drive-content--cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+.learnly-about-page .learnly-value-drive .learnly-container .learnly-value-drive-content--cards__card {
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  flex: 1 0 0;
+  border-radius: 8px;
+  background: #FFF;
+  box-shadow: 0px 8px 24px 0px rgba(220, 220, 220, 0.24);
+}
+.learnly-about-page .learnly-value-drive .learnly-container .learnly-value-drive-content--cards__card h4 {
+  color: #07271D;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  margin: 0;
+}
+.learnly-about-page .learnly-experts {
+  width: 100%;
+  padding: 160px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+.learnly-about-page .learnly-experts--cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
 }
 
 .learnly-footer {
